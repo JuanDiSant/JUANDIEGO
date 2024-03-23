@@ -1,0 +1,9 @@
+#valor compra con descuento 
+Compra=85000
+Descuento=0.05
+Total=0
+
+total=Compra-(Compra*Descuento)
+print(f"el valor de la compra es: {Compra}")
+print(f"el descuento fue de: {Compra*Descuento}")
+print("la cantidad a pagar es ",Total)
