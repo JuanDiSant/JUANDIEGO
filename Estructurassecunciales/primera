@@ -1,0 +1,5 @@
+nombre="Juan"
+profesion="ADSO"
+estatura=1.71
+peso=52
+print(f"mi nombre es:{nombre},soy: {profesion},mido: {estatura} cm, y peso: {peso} kg")

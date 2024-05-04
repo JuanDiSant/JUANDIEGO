@@ -1,0 +1,48 @@
+def categorizar_persona(edad):
+    if edad >= 0 and edad <= 12:
+        return "Niño"
+    elif edad >= 13 and edad <= 29:
+        return "Joven"
+    elif edad >= 30 and edad <= 59:
+        return "Adulto"
+    else:
+        return "Anciano"
+
+contador_ninos = 0
+contador_jovenes = 0
+contador_adultos = 0
+contador_ancianos = 0
+
+suma_peso_ninos = 0
+suma_peso_jovenes = 0
+suma_peso_adultos = 0
+suma_peso_ancianos = 0
+
+for i in range(50):
+    edad = int(input("Ingrese la edad de la persona {}: ".format(i + 1)))
+    peso = float(input("Ingrese el peso de la persona {}: ".format(i + 1)))
+
+    categoria = categorizar_persona(edad)
+
+    if categoria == "Niño":
+        contador_ninos += 1
+        suma_peso_ninos += peso
+    elif categoria == "Joven":
+        contador_jovenes += 1
+        suma_peso_jovenes += peso
+    elif categoria == "Adulto":
+        contador_adultos += 1
+        suma_peso_adultos += peso
+    else:
+        contador_ancianos += 1
+        suma_peso_ancianos += peso
+
+promedio_peso_ninos = suma_peso_ninos / contador_ninos if contador_ninos > 0 else 0
+promedio_peso_jovenes = suma_peso_jovenes / contador_jovenes if contador_jovenes > 0 else 0
+promedio_peso_adultos = suma_peso_adultos / contador_adultos if contador_adultos > 0 else 0
+promedio_peso_ancianos = suma_peso_ancianos / contador_ancianos if contador_ancianos > 0 else 0
+
+print("Promedio de peso de niños:", promedio_peso_ninos)
+print("Promedio de peso de jóvenes:", promedio_peso_jovenes)
+print("Promedio de peso de adultos:", promedio_peso_adultos)
+print("Promedio de peso de ancianos:", promedio_peso_ancianos)

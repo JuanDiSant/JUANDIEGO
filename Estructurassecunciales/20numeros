@@ -1,0 +1,25 @@
+def contar_numeros(numeros):
+    positivos = 0
+    negativos = 0
+    neutros = 0
+
+    for numero in numeros:
+        if numero > 0:
+            positivos += 1
+        elif numero < 0:
+            negativos += 1
+        else:
+            neutros += 1
+
+    return positivos, negativos, neutros
+
+numeros = []
+for i in range(20):
+    numero = float(input("Ingrese el número {}: ".format(i + 1)))
+    numeros.append(numero)
+
+positivos, negativos, neutros = contar_numeros(numeros)
+
+print("Cantidad de números positivos:", positivos)
+print("Cantidad de números negativos:", negativos)
+print("Cantidad de números neutros:", neutros)
