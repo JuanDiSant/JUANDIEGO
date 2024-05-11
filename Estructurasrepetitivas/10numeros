@@ -1,0 +1,16 @@
+def leer_y_convertir():
+    numeros_negativos = []
+    for i in range(10):
+        numero = float(input("Ingrese el número negativo {}: ".format(i + 1)))
+        if numero < 0:
+            numeros_negativos.append(-numero) 
+        else:
+            print("El número ingresado no es negativo. Inténtelo de nuevo.")
+            return None
+    return numeros_negativos
+
+numeros_convertidos = leer_y_convertir()
+
+if numeros_convertidos:
+    suma = sum(numeros_convertidos)
+    print("La suma de los números convertidos es:", suma)

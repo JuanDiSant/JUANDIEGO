@@ -1,0 +1,22 @@
+def contar_hombres_y_mujeres(total_personas):
+    contador_hombres = 0
+    contador_mujeres = 0
+    
+    for i in range(total_personas):
+        genero = input("Ingrese el género de la persona {}: (H para hombre, M para mujer) ".format(i + 1)).upper()
+        
+        if genero == "H":
+            contador_hombres += 1
+        elif genero == "M":
+            contador_mujeres += 1
+        else:
+            print("Género no válido. Por favor, ingrese 'H' para hombre o 'M' para mujer.")
+
+    return contador_hombres, contador_mujeres
+
+total_personas = int(input("Ingrese el número total de personas en el salón: "))
+
+hombres, mujeres = contar_hombres_y_mujeres(total_personas)
+
+print("Cantidad de hombres:", hombres)
+print("Cantidad de mujeres:", mujeres)
