@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Libros</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <caption>Relación de libros</caption>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Título</th>
+                <th>Autor</th>
+                <th>Editorial</th>
+                <th>Categoría</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Libro 1 -->
+            <tr>
+                <td rowspan="2">001</td>
+                <td rowspan="2">Harry Potter y la piedra filosofal</td>
+                <td>J.K. Rowling</td>
+                <td rowspan="2">Salamandra</td>
+                <td>Fantasía</td>
+                <td>Disponible</td>
+            </tr>
+            <tr>
+                <td>Juan Pérez (ilustrador)</td>
+                <td>Infantil</td>
+                <td>Prestado</td>
+            </tr>
+            <!-- Libro 2 -->
+            <tr>
+                <td>002</td>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>Debolsillo</td>
+                <td>Ciencia ficción</td>
+                <td>Disponible</td>
+            </tr>
+            <!-- Libro 3 -->
+            <tr>
+                <td>003</td>
+                <td>El principito</td>
+                <td>Antoine de Saint-Exupéry</td>
+                <td>Salvat</td>
+                <td>Clásicos</td>
+                <td>Disponible</td>
+            </tr>
+            <!-- Libro 4 -->
+            <tr>
+                <td>004</td>
+                <td>El código Da Vinci</td>
+                <td>Dan Brown</td>
+                <td>Planeta</td>
+                <td>Novela</td>
+                <td>Prestado</td>
+            </tr>
+            <!-- Libro 5 -->
+            <tr>
+                <td>005</td>
+                <td>Don Quijote de la Mancha</td>
+                <td>Miguel de Cervantes</td>
+                <td>Anaya</td>
+                <td>Clásicos</td>
+                <td>Disponible</td>
+            </tr>
+            <!-- Libro 6 -->
+            <tr>
+                <td>006</td>
+                <td>Cien años de soledad</td>
+                <td>Gabriel García Márquez</td>
+                <td>Diana</td>
+                <td>Realismo mágico</td>
+                <td>Disponible</td>
+            </tr>
+            <!-- Libro 7 -->
+            <tr>
+                <td>007</td>
+                <td>Orgullo y prejuicio</td>
+                <td>Jane Austen</td>
+                <td>Alianza Editorial</td>
+                <td>Clásicos</td>
+                <td>Disponible</td>
+            </tr>
+            <!-- Libro 8 -->
+            <tr>
+                <td>008</td>
+                <td>Matar a un ruiseñor</td>
+                <td>Harper Lee</td>
+                <td>Grup 62</td>
+                <td>Novela contemporánea</td>
+                <td>Prestado</td>
+            </tr>
+            <!-- Libro 9 -->
+            <tr>
+                <td>009</td>
+                <td>El señor de los anillos</td>
+                <td>J.R.R. Tolkien</td>
+                <td>Minotauro</td>
+                <td>Fantasía épica</td>
+                <td>Disponible</td>
+            </tr>
+            <!-- Libro 10 -->
+            <tr>
+                <td>010</td>
+                <td>La sombra del viento</td>
+                <td>Carlos Ruiz Zafón</td>
+                <td>Planeta</td>
+                <td>Novela histórica</td>
+                <td>Disponible</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
